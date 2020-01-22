@@ -5,12 +5,12 @@ function onEnterPressed(event){
     addEntry();
 }
 
-var id=0
+var id=0;
 
 function addEntry(){
     let snippet=`
-        <tr id=>
-                <td>❌</td>
+        <tr id="${id}">
+                <td >❌</td>
                 <td>John</td>
         </tr>
     `
