@@ -2,37 +2,33 @@
 <head>
 	<title>Lab 3 example</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script3.js" charset="UTF-8"></script>
 </head>
 <body>
 	<h1>Step 1</h1>
 	<table>
 		<caption>Lets Focus here</caption>
+		<thead>
 		<tr>
 			<th class="th_rm"></th>
 			<th>Name</th>
 		</tr>
-		<tr>
-			<td>❌</td>
-			<td>John</td>
-		</tr>
-		<tr>
-			<td>❌</td>
-			<td>John</td>
-		</tr>
-		<tr>
-			<td>❌</td>
-			<td>John</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>
-				<input id="name" type="text">
-			</td>
-		</tr>
+		</thead>
+		<tbody id="tbody">
+			
+		</tbody>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td>
+					<input id="name" onkeyup="onEnterPressed(event)" type="text">
+				</td>
+			</tr>
+		</tfoot>
 	</table>
 	<br>
 
-	<a href="index1.html">First</a>
+	<a href="index.html">First</a>
 	<a href="index2.html">Back</a>
 	<a href="index4.html">Next</a>
 
@@ -43,7 +39,7 @@
 		<li>Simple Tables</li>
         <li>Emojis</li>
         <li>Input</li>
-        
+        <li>Added Rows Dynamically</li>
 	</ul>
 </body>
 </html>
