@@ -19,3 +19,12 @@ th:not(.th_rm){
 caption{
 	caption-side: bottom;
 }
+
+input{
+	border: 0px;
+	width: 100%;
+	background-color: inherit;
+	outline: none;
+	font-size: inherit;
+	font-family: inherit;
+}
