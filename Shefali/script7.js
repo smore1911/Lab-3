@@ -12,7 +12,8 @@ var entries = [
     {id:"4", name: "john"}
 ];
 
-function refreshTable(){
+function refreshTable(){  
+      
     let snippet = "";
     entries.forEach(element => {
         snippet += `
@@ -23,7 +24,7 @@ function refreshTable(){
     });
     
     setName("");
-    getElement("tbody").innerHTML=snippet;
+    getElement("tbody").innerHTML=snippet; 
 }
 
 var id=0;
@@ -57,5 +58,8 @@ function getElement(id){
 
 function removeEntry(id){
     document.getElementById(id).remove();
-    
+
+    var del=(document.getElementById(id).childNodes[4].innerText);
+    var n=entries.indexOf(del);
+    entries.splice(n,1);
 }
